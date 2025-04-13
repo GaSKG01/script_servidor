@@ -8,11 +8,15 @@ apt install apache2 -y
 echo "instalando apache2..."
 apt install unzip -y
 echo "Instalando unzip..."
+cd /tmp
 
-apt install git -y
-echo "instalando git..."
+wget  https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip 
 
-git clone  https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip /tmp && cp  /tmp/main.zip /var/www/html -r
+unzip main.zip
+
+cd linux-site-dio
+
+cp -R* /var/www/html/
 
 echo "fim..."
 

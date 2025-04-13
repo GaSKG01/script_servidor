@@ -22,5 +22,12 @@ cd linux-site-dio-main
 
 cp -R* /var/www/html/
 
+git init
+git add .
+git commit-m "Apache v1"
+git branc -M main
+
+
+
 echo "fim..."
 
